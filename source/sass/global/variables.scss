@@ -1,0 +1,19 @@
+@use "sass:color";
+
+/*colors*/
+$font-main-color: #333333;
+$font-secondarycolor: #000000;
+$font-inverse-color: #ffffff;
+$secondary-color: #99CB38;
+$secondary-color-light: color.adjust($secondary-color, $saturation: 27.80%, $lightness: 14.71%);
+$bg-primary: #FBD846; // main bg & buttons color
+$bg-primary-88: color.adjust($bg-primary, $saturation: 4.23%, $lightness: 13.73%);
+$bg-primary-72: color.adjust($bg-primary, $saturation: 4.23%, $lightness: 9.41%);
+$bg-primary-81: color.adjust($bg-primary, $hue: -5, $saturation: 4.23%, $lightness: 12.35%);
+$bg-primary-55: color.adjust($bg-primary, $hue: -5, $saturation: -3.68%, $lightness: 2.35%);
+$bg-primary-6f: color.adjust($bg-primary, $hue: -5, $saturation: 4.23%, $lightness: 8.82%);
+
+/*viewports*/
+$mobile-width: 375px;
+$tablet-width: 768px;
+$desktop-width: 1140px;

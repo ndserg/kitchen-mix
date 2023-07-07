@@ -1,0 +1,137 @@
+.header-main {
+  background-color: $font-inverse-color;
+
+  &--hide {
+    filter: drop-shadow(0px 4px 5px rgba($font-secondarycolor, 10%));
+  }
+
+  &--open {
+    filter: none;
+  }
+}
+
+.header-main__wrapper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+
+  @media (min-width: $tablet-width) {
+    height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
+    min-height: 104px;
+  }
+}
+
+.header-main__logo {
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+}
+
+.header-main__phone {
+  display: block;
+
+  color: $font-main-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: none;
+
+  img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+
+    vertical-align: middle;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header-main__menu-button {
+  display: block;
+
+  order: 3;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header-main__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  padding-top: 90px;
+  padding-right: 30px;
+  padding-bottom: 70px;
+  padding-left: 30px;
+
+  background-color: $font-inverse-color;
+
+  &--hide {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    align-items: center;
+    width: auto;
+    padding: 0;
+
+    background-color: transparent;
+
+    &--hide {
+      display: grid;
+    }
+
+    &--open {
+      display: grid;
+    }
+  }
+}
+
+.header-main__nav {
+  margin-bottom: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+}
