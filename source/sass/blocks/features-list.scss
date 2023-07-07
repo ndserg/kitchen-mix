@@ -1,0 +1,31 @@
+.features-list {
+  @include list-reset;
+}
+
+
+.features-list__item {
+  display: block;
+  min-height: 25px;
+  padding-left: 35px;
+
+  font-weight: 500;
+  font-size: 11px;
+  line-height: normal;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 25px 25px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 35px;
+    padding-left: 45px;
+
+    font-size: 16px;
+
+    background-size: 35px 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 32px 32px;
+  }
+}
