@@ -4,17 +4,20 @@
 
 /*Fonts*/
 $font-main-color: #333333;
+$font-light-grey-color: #b2b2b2;
 $font-yellow-color: #fbd846;
+$font-green-color: #99CB38;
 $font-black-color: #000000;
 $font-inverse-color: #ffffff;
 
 /*Background colors*/
 $bg-light-main-color: #ffffff;
 $bg-light-secondary-color: #fcfcfc;
+$bg-light-grey-color: #f4f4f4;
 $bg-dark-main-color: #333333;
 $bg-black-color: #000000;
-$secondary-color: #99cb38;
-$secondary-color-light: color.adjust($secondary-color, $saturation: 27.80%, $lightness: 14.71%);
+$bg-secondary-color: #99cb38;
+$bg-secondary-color-light: color.adjust($bg-secondary-color, $saturation: 27.80%, $lightness: 14.71%);
 $bg-primary: #fbd846; // main bg & buttons color
 $bg-primary-88: color.adjust($bg-primary, $saturation: 4.23%, $lightness: 13.73%);
 $bg-primary-72: color.adjust($bg-primary, $saturation: 4.23%, $lightness: 9.41%);

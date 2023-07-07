@@ -1,0 +1,120 @@
+.product-card__title {
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.product-card__button-info {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  font-size: 0;
+  line-height: 0;
+
+  background-color: $bg-light-grey-color;
+  background-image: url("/img/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px 20px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 345px;
+  padding-bottom: 30px;
+
+  background-color: $bg-light-main-color;
+
+  &:active {
+    outline: 2px solid $bg-secondary-color;
+    cursor: pointer;
+
+    .product-card__title {
+      color: $font-green-color;
+    }
+
+    .product-card__button-info {
+      background-color: $bg-secondary-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+
+    &:hover {
+      outline: 2px solid $bg-secondary-color;
+
+      .product-card__title {
+        color: $font-green-color;
+      }
+
+      .product-card__button-info {
+        background-color: $bg-secondary-color;
+      }
+    }
+  }
+}
+
+.product-card__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.product-card__img {
+  order: -1;
+  width: 345px;
+  height: 250px;
+  margin-bottom: 22px;
+
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    height: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 260px;
+  }
+}
+
+.product-card__price {
+  margin: 0;
+
+  color: $font-green-color;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.product-card__price-old {
+  display: block;
+  margin-bottom: 5px;
+
+  color: $font-light-grey-color;
+  font-size: 16px;
+  text-decoration: line-through;
+}

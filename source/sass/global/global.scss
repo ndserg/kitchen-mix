@@ -43,8 +43,8 @@ img {
 .container {
   width: $mobile-width;
   margin: 0 auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -52,5 +52,6 @@ img {
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    padding: 0;
   }
 }
