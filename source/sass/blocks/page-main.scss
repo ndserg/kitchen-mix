@@ -1,0 +1,14 @@
+.page-main__promo {
+  background-color: $bg-light-main-color;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: calc(50% + 115px) calc(50% - 115px);
+    width: 100%;
+    min-height: 714px;
+    margin: 0;
+    padding: 0;
+
+    background-color: $bg-light-secondary-color;
+  }
+}

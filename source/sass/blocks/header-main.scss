@@ -1,9 +1,7 @@
 .header-main {
-  background-color: $font-inverse-color;
+  background-color: $bg-light-main-color;
 
-  &--hide {
-    filter: drop-shadow(0px 4px 5px rgba($font-secondarycolor, 10%));
-  }
+  filter: drop-shadow(0px 4px 5px rgba($bg-black-color, 10%));
 
   &--open {
     filter: none;
@@ -92,7 +90,7 @@
   padding-bottom: 70px;
   padding-left: 30px;
 
-  background-color: $font-inverse-color;
+  background-color: $bg-light-main-color;
 
   &--hide {
     display: none;

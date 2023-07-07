@@ -42,6 +42,17 @@
     url("/fonts/Montserrat-SemiBold.woff") format("woff");
 }
 
+/* Montserrat-700 Bold*/
+@font-face {
+  font-display: swap;
+
+  font-weight: 700;
+  font-family: "Montserrat";
+  font-style: normal;
+  src: url("/fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("/fonts/Montserrat-Bold.woff") format("woff");
+}
+
 /* Montserrat-900 Boldest*/
 @font-face {
   font-display: swap;
