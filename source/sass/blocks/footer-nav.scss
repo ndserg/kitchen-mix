@@ -1,0 +1,45 @@
+.footer-nav__list {
+  @include list-reset;
+}
+
+.footer-nav__item {
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align-last: left;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-nav__link {
+  display: block;
+
+  color: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $font-green-color;
+    }
+  }
+
+  &--current {
+    border-bottom: 2px solid $bg-primary;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
