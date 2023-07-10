@@ -78,6 +78,10 @@
 
   box-shadow: 10px 10px 20px 0px rgba($bg-primary-6f, 40%);
 
+  &--green  {
+    background: linear-gradient(268deg, $bg-secondary-color 0%, $bg-secondary-color-light 100%);
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 22px;
     padding-right: 72px;
@@ -96,6 +100,22 @@
     font-size: 16px;
 
     cursor: pointer;
+
+    &:hover {
+      background: none;
+      background-color: $bg-light-main-color;
+
+      outline: 2px solid $bg-primary;
+    }
+
+    &--green {
+      &:hover {
+        background: none;
+        background-color: $bg-light-main-color;
+
+        outline: 2px solid $bg-secondary-color;
+      }
+    }
   }
 
   &:active {
