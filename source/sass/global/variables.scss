@@ -5,6 +5,7 @@
 /*Fonts*/
 $font-main-color: #333333;
 $font-light-grey-color: #b2b2b2;
+$font-light-color: #b0b0b0;
 $font-yellow-color: #fbd846;
 $font-green-color: #99CB38;
 $font-black-color: #000000;
@@ -16,6 +17,7 @@ $bg-light-secondary-color: #fcfcfc;
 $bg-light-grey-color: #f4f4f4;
 $bg-dark-main-color: #333333;
 $bg-black-color: #000000;
+$bg-dark-color: #262626;
 $bg-secondary-color: #99cb38;
 $bg-secondary-color-light: color.adjust($bg-secondary-color, $saturation: 27.80%, $lightness: 14.71%);
 $bg-primary: #fbd846; // main bg & buttons color

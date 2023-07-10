@@ -14,6 +14,7 @@
 }
 
 .page-main__title {
+  margin-top: 0;
   margin-bottom: 50px;
 
   font-weight: 900;
@@ -120,6 +121,7 @@
 
 .page-main__furniture {
   margin-bottom: 100px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 88px;
@@ -144,5 +146,15 @@
 
   @media (min-width: $desktop-width) {
     row-gap: 30px;
+  }
+}
+
+.page-main__consult {
+  padding-top: 40px;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 60px;
   }
 }
