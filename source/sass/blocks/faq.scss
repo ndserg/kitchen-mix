@@ -1,0 +1,165 @@
+.faq__title {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 24px;
+  padding-right: 40px;
+
+  font-weight: 900;
+  font-size: 22px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+  }
+}
+
+.faq__text {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 751px;
+  }
+}
+
+.faq__content {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+
+.faq__img {
+  max-width: 345px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 360px;
+    max-height: 360px;
+
+    object-fit: cover;
+  }
+}
+
+.faq__toggle-button {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  line-height: 40px;
+
+  background-color: $bg-light-grey-color;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &--show::after {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    vertical-align: middle;
+
+    content: "+";
+  }
+
+  &--hide {
+    top: 20px;
+
+    &::after {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 18px;
+      vertical-align: middle;
+
+      content: "\2014";
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $font-inverse-color;
+
+      background-color: $bg-secondary-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.faq__item {
+  position: relative;
+
+  margin-bottom: 54px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-top: 2px solid $bg-primary;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+
+    &:nth-child(odd) .faq__text {
+      order: 3;
+    }
+  }
+
+  &--hide {
+    padding: 20px;
+
+    border-top: none;
+    border-radius: 30px;
+    outline: 2px solid $bg-primary;
+
+    .faq__title {
+      margin-bottom: 0;
+    }
+
+    .faq__content {
+      display: none;
+    }
+  }
+
+  &:nth-child(odd) .faq__title {
+    padding-right: 0;
+    padding-left: 40px;
+
+    text-align: right;
+  }
+
+  &:nth-child(odd) .faq__toggle-button {
+    right: auto;
+    left: 10px;
+  }
+}

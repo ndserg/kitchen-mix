@@ -96,8 +96,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-
-
 }
 
 .page-main__popular-show-all-button {
@@ -117,6 +115,18 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 47px;
+  }
+}
+
+.page-main__furniture {
+  margin-bottom: 100px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 116px;
   }
 }
 
