@@ -1,0 +1,128 @@
+.furniture-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 345px;
+  height: 100%;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+
+  box-shadow: 5px 5px 10px 0px rgba($bg-black-color, 10%);
+
+  @media (min-width: $tablet-width) {
+    width: 344px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+  }
+}
+
+.furniture-card ul {
+  @include list-reset;
+
+  margin-bottom: 15px;
+
+  list-style-position: inside;
+  list-style-type: "- ";
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.furniture-card li {
+  margin-bottom: 12px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.furniture-card p {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.furniture-card h1,
+.furniture-card h2,
+.furniture-card h3,
+.furniture-card h4,
+.furniture-card h5,
+.furniture-card h6 {
+  float: left;
+  width: 172px;
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: normal;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 158px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 166px;
+  }
+}
+
+.furniture-card figure {
+  float: right;
+  width: 140px;
+  height: 114px;
+  margin: 0;
+  margin-bottom: 18px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    height: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 162px;
+    height: 120px;
+  }
+}
+
+.furniture-card img {
+  max-width: 140px;
+  max-height: 114px;
+
+  object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    max-width: 155px;
+    max-height: 114px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 162px;
+    max-height: 120px;
+  }
+}
+
+.furniture-card button {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  font-size: 16px;
+  text-align: center;
+}
