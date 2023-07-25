@@ -29,11 +29,13 @@
 }
 
 .footer-custom-list__img {
-  max-width: 22px;
-  max-height: 16px;
+  width: 22px;
+  max-height: 22px;
   margin-right: 20px;
 
   object-fit: cover;
+
+  color: $font-green-color;
 
   vertical-align: middle;
 }

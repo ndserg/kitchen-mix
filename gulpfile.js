@@ -11,6 +11,7 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass")(require("sass"))
 const autoprefixer = require("autoprefixer");
 const imagemin = require("gulp-imagemin");
+const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
 const inject = require("gulp-inject");
 const rename = require("gulp-rename");
@@ -30,6 +31,7 @@ const copy = () => {
   return src([
     "source/fonts/**/*.{woff2,woff}",
     "source/*.{png,ico,webmanifest}",
+    "source/img/icons/**/*"
     ], {
     base: "source"
     })
@@ -41,7 +43,7 @@ exports.copy = copy;
 // Images
 
 const images = () => {
-  return src("source/img/**/*.{jpg,png,svg}")
+  return src(["source/img/**/*.{jpg,png,svg}", "!source/img/icons/*.svg"])
   .pipe(imagemin([
     imagemin.mozjpeg({quality: 75, progressive: true}),
     imagemin.optipng({optimizationLevel: 3}),
@@ -55,6 +57,24 @@ const images = () => {
 }
 
 exports.images = images;
+
+// Icons
+
+const icons = () => {
+  return src("source/img/icons/*.svg")
+  .pipe(imagemin([
+    imagemin.svgo({
+      plugins: [{
+        removeViewBox: false
+      }]
+    })
+  ]))
+  .pipe(svgstore())
+  .pipe(rename("sprite.svg"))
+  .pipe(dest("build/img/icons"))
+}
+
+exports.icons = icons;
 
 // Styles
 
@@ -84,7 +104,7 @@ const scripts = () => {
       presets: ["@babel/env"]
     }))
     .pipe(mode.production(uglify()))
-    .pipe(concat("main.min.js"))
+    .pipe(rename({ extname: '.min.js' }))
     .pipe(mode.development(sourcemap.write("sourcemaps")))
     .pipe(dest("build/js"))
     .pipe(sync.stream());
@@ -137,13 +157,13 @@ const watcher = () => {
 
 exports.build = series(
   clean,
-  parallel(copy, styles, scripts, images),
+  parallel(copy, styles, scripts, images, icons),
   html
 );
 
 exports.default = series(
   clean,
-  parallel(copy, styles, scripts, images),
+  parallel(copy, styles, scripts, images, icons),
   html,
   server,
   watcher

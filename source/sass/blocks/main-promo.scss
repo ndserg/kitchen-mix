@@ -1,5 +1,10 @@
 .main-promo__info {
   padding-top: 35px;
+  padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 655px;

@@ -1,7 +1,15 @@
 .consult {
+  padding-top: 40px;
+  padding-bottom: 35px;
+
   color: $font-light-color;
 
   background-color: $bg-dark-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 60px;
+  }
 }
 
 .consult__title {
@@ -9,7 +17,19 @@
   margin-bottom: 40px;
 
   color: $font-inverse-color;
+  font-weight: 900;
+  font-size: 22px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+
+    font-size: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 
   span {
     color: $font-green-color;

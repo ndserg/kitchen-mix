@@ -41,7 +41,6 @@
   }
 }
 
-
 .faq__img {
   max-width: 345px;
 
@@ -60,7 +59,7 @@
 
 .faq__toggle-button {
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 10px;
 
   display: block;
@@ -79,26 +78,13 @@
 
   cursor: pointer;
 
-  &--show::after {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+  &::after {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 18px;
     vertical-align: middle;
 
-    content: "+";
-  }
-
-  &--hide {
-    top: 20px;
-
-    &::after {
-      font-weight: 900;
-      font-size: 18px;
-      line-height: 18px;
-      vertical-align: middle;
-
-      content: "\2014";
-    }
+    content: "\2014";
   }
 
   @media (min-width: $desktop-width) {
@@ -148,6 +134,19 @@
 
     .faq__content {
       display: none;
+    }
+
+    .faq__toggle-button {
+      top: 15px;
+
+      &::after {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        vertical-align: middle;
+
+        content: "+";
+      }
     }
   }
 

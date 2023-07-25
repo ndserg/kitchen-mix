@@ -11,6 +11,7 @@
   width: 40px;
   height: 40px;
   margin: 0;
+  margin-top: auto;
   margin-left: auto;
   padding: 0;
 
@@ -18,7 +19,7 @@
   line-height: 0;
 
   background-color: $bg-light-grey-color;
-  background-image: url("/img/icons/icon-search.svg");
+  background-image: url("../img/icons/icon-search.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 20px 20px;
@@ -31,8 +32,9 @@
 
 .product-card {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   width: 345px;
+  height: 100%;
   padding-bottom: 30px;
 
   background-color: $bg-light-main-color;
@@ -74,6 +76,7 @@
 .product-card__content {
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   padding-right: 15px;
   padding-left: 15px;
 
@@ -104,6 +107,7 @@
 
 .product-card__price {
   margin: 0;
+  margin-top: auto;
 
   color: $font-green-color;
   font-weight: 600;

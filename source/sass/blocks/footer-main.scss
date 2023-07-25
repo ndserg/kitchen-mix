@@ -45,11 +45,10 @@
 }
 
 .footer-main__logo {
-  max-width: 165px;
+  width: 165px;
+  height: 68px;
   margin: 0 auto;
   margin-bottom: 20px;
-
-  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     margin: 0;

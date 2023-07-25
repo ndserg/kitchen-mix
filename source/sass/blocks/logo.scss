@@ -1,13 +1,13 @@
 .logo {
-  display: block;
-
-  font-size: 0;
-  line-height: 0;
-}
-
-.logo__img {
   width: 116px;
   height: 48px;
+
+  a {
+    text-decoration: none;
+  }
+  img {
+    object-fit: cover;
+  }
 
   @media (min-width: $tablet-width) {
     width: 165px;
