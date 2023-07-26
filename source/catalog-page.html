@@ -82,76 +82,121 @@
     </div>
   </header>
 
-  <main class="page-contacts">
-    <div class="page-contacts__wrapper container">
-      <h1 class="page-contacts__title">Контакты</h1>
+  <main class="page-catalog">
+    <div class="page-catalog__top container">
+      <h1 class="page-catalog__title">Каталог товаров</h1>
+      <p class="page-catalog__showed-goods-number">Отображаются все 37 результатов</p>
 
-      <div class="page-contacts__contacts-info">
-        <div class="page-contacts__address">
-          <svg class="page-contacts__icon" width="25" height="25">
-            <use xlink:href="img/icons/sprite.svg#icon-address"></use>
-          </svg>
-          <p>г. Нижневартовск, ул. Индустриальная д. 7 стр. 1 ТЦ "ВДНХ", 2 ЭТАЖ, бутик №20а</p>
-        </div>
+      <button class="page-catalog__sort-button page-catalog__sort-button--asc" type="button" data-sort="asc">
+        Цены: по возрастанию
+        <svg class="page-catalog__sort-icon" width="10" height="10">
+          <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+        </svg>
+      </button>
+    </div>
 
-        <div class="page-contacts__phones">
-          <h2 class="page-contacts__phones-title">Телефоны офиса:</h2>
+    <div class="page-catalog__goods container">
+      <ul class="page-catalog__list">
+        <li class="page-catalog__item">
+          <article class="product-card">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
 
-          <svg class="page-contacts__icon" width="25" height="25">
-            <use xlink:href="img/icons/sprite.svg#icon-phone"></use>
-          </svg>
+              <p class="product-card__price">
+                <span class="product-card__price-old">19 899 ₽</span>
+                14 900 ₽
+              </p>
+              <button class="product-card__button-info" type="button">Подробнее</button>
+            </div>
 
-          <ul class="page-contacts__list">
-            <li class="page-contacts__list-item">
-              <a class="page-contacts__link" href="tel:+73466682015">8 (3466) 68-20-15</a>
-            </li>
+            <img class="product-card__img" src="img/kitchen-1.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
+          </article>
+        </li>
 
-            <li class="page-contacts__list-item">
-              <a class="page-contacts__link" href="tel:+73466681598">8 (3466) 68-15-98</a>
-            </li>
-          </ul>
-        </div>
+        <li class="page-catalog__item">
+          <article class="product-card">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
 
-        <ul class="page-contacts__social">
-          <li class="page-contacts__social-item">
-            <svg class="page-contacts__icon" width="25" height="25">
-              <use xlink:href="img/icons/sprite.svg#icon-vk"></use>
-            </svg>
-            <a class="page-contacts__social-link" href="#">vk.com/kuhninv</a>
-          </li>
+              <p class="product-card__price">
+                <span class="product-card__price-old">19 899 ₽</span>
+                14 900 ₽
+              </p>
+              <button class="product-card__button-info" type="button">Подробнее</button>
+            </div>
 
-          <li class="page-contacts__social-item">
-            <svg class="page-contacts__icon" width="25" height="25">
-              <use xlink:href="img/icons/sprite.svg#icon-ok"></use>
-            </svg>
-            <a class="page-contacts__social-link" href="#">ok.ru/kuhninv</a>
-          </li>
-        </ul>
-      </div>
+            <img class="product-card__img" src="img/kitchen-2.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
+          </article>
+        </li>
 
-      <figure class="page-contacts__image">
-        <img src="img/no-image.jpg" alt="Фото оффиса" width="555" height="442">
-      </figure>
+        <li class="page-catalog__item">
+          <article class="product-card">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
 
-      <div class="page-contacts__additional-info">
-        <p>Кухня - это самый уютный уголок в квартире или доме, где собирается семья за ужином или воскресным обедом, дружно обсуждая последние события и новости, успехи на работе/в школе или строя совместные планы. Современные кухни должны отличаться продуманным интересным дизайном, эргономичностью, и экономичностью. Мы рады предложить вам кухни полностью соответствующие этим требованиям.</p>
+              <p class="product-card__price">
+                <span class="product-card__price-old">19 899 ₽</span>
+                14 900 ₽
+              </p>
+              <button class="product-card__button-info" type="button">Подробнее</button>
+            </div>
 
-        <p>Мы изготавливаем кухни на заказ по низким ценам, не делаем наценок на нашу продукцию. Наши цены заморожены с 2015 года! Вся мебель производится из прочной ламинированной ДСП, устойчивой к износу и абсолютно безопасной с экологической точки зрения. Фасады, в большинстве случаев, изготавливаются из МДФ. Цветовых вариантов данных материалов масса. В каталоге представлено большое количество цветовых вариантов от классических светлых решений, до экстравагантных кухонь винного или черного оттенков. При заказе кухни вы получаете матовую столешницу толщиной 26 мм в подарок!</p>
+            <img class="product-card__img" src="img/kitchen-3.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
+          </article>
+        </li>
 
-        <p>Хотите любоваться на кухне своей свадебной фотографией или фотосессией из отпуска в горах? С помощью наших кухонь это стало реальностью - вы можете выбрать свое уникальное изображение для нанесения фотопечати на кухонный фартук или фасады кухни.Отличительной особенностью нашей компании является наличие онлайн конструктора для моделирования и расчета стоимости кухни на сайте. С его помощью Вы сможете до мелочей продумать проект своей кухни в трехмерном представлении и установить кухню мечты даже в малогабаритном помещении. В конструкторе можно настроить стены, колонны, окна и двери, подобрать текущие цвета пола и стен. Расположить требуемое количество полок, шкафов, подобрать цвета фасада или декор столешниц.</p>
+        <li class="page-catalog__item">
+          <article class="product-card">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
 
-        <p>Для тех, кто не хочет ждать, на нашем сайте представлены готовые кухонные гарнитуры под любой интерьер по антикризисным ценам, начиная с 12 900 рублей. Мы быстро доставим заказ в удобное для вас время и нужное место.</p>
+              <p class="product-card__price">
+                <span class="product-card__price-old">19 899 ₽</span>
+                14 900 ₽
+              </p>
+              <button class="product-card__button-info" type="button">Подробнее</button>
+            </div>
 
-        <p>Чтобы сделать заказ или проконсультироваться по интересующему вопросу звоните нам по номеру телефона +7 (3466) 68-15-98 с 9:00 до 21:00 или заполняйте форму заявки - и мы вам перезвоним в ближайшее время. Заказывайте кухонные гарнитуры по низким ценам и проводите время на своей красивой кухне, наслаждаясь ею еще долгое время.</p>
-      </div>
+            <img class="product-card__img" src="img/kitchen-4.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
+          </article>
+        </li>
+
+        <li class="page-catalog__item">
+          <article class="product-card">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+
+              <p class="product-card__price">
+                <span class="product-card__price-old">19 899 ₽</span>
+                14 900 ₽
+              </p>
+              <button class="product-card__button-info" type="button">Подробнее</button>
+            </div>
+
+            <img class="product-card__img" src="img/kitchen-5.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
+          </article>
+        </li>
+
+        <li class="page-catalog__item">
+          <article class="product-card">
+            <div class="product-card__content">
+              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+
+              <p class="product-card__price">
+                <span class="product-card__price-old">19 899 ₽</span>
+                14 900 ₽
+              </p>
+              <button class="product-card__button-info" type="button">Подробнее</button>
+            </div>
+
+            <img class="product-card__img" src="img/kitchen-6.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
+          </article>
+        </li>
+      </ul>
+
+      <button class="page-catalog__showmore-button button">Показать еще</button>
     </div>
   </main>
-
-  <section class="map">
-    <h2 class="visually-hidden">Схема проезда</h2>
-
-    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9da392b5481a1c2cd4b853633f352fe4f3f99c6264c381f3f7721c2380517838&amp;source=constructor"></iframe>
-  </section>
 
   <footer class="footer-main">
     <div class="footer-main__wrapper container">
