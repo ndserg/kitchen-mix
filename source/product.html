@@ -82,119 +82,85 @@
     </div>
   </header>
 
-  <main class="page-catalog">
-    <div class="page-catalog__top container">
-      <h1 class="page-catalog__title">Каталог товаров</h1>
-      <p class="page-catalog__showed-goods-number">Отображаются все 37 результатов</p>
+  <main class="page-product product container">
+    <h1 class="product__title">Кухонный гарнитур “Шимо”. Длина 1.2 метра.</h1>
 
-      <button class="page-catalog__sort-button page-catalog__sort-button--asc" type="button" data-sort="asc">
-        Цены: по возрастанию
-        <svg class="page-catalog__sort-icon" width="10" height="10">
-          <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
-        </svg>
-      </button>
+    <div class="product__gallery">
+      <img class="product__img" src="img/kitchen-1.jpg" width="345" height="333" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+
+      <div class="product__gallery-thumbnails">
+        <img class="product__thumbnail" src="img/kitchen-2.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+        <img class="product__thumbnail" src="img/kitchen-3.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+        <img class="product__thumbnail" src="img/kitchen-4.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+        <img class="product__thumbnail" src="img/kitchen-5.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+        <img class="product__thumbnail" src="img/kitchen-6.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+      </div>
+
+      <button class="product__gallery-button product__gallery-button--prev">Назад</button>
+      <button class="product__gallery-button product__gallery-button--next">Вперед</button>
     </div>
 
-    <div class="page-catalog__goods container">
-      <ul class="page-catalog__list">
-        <li class="page-catalog__item">
-          <article class="product-card">
-            <div class="product-card__content">
-              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+    <div class="product__info">
+      <div class="product__tabs">
+        <button class="product__info-tab" data-tab="description">Описание</button>
+        <button class="product__info-tab" data-tab="characteristics">Характеристики</button>
+      </div>
 
-              <p class="product-card__price">
-                <span class="product-card__price-old">19 899 ₽</span>
-                14 900 ₽
-              </p>
-              <a class="product-card__button-info" href="product.html">Подробнее</a>
-            </div>
+      <div class="product__description product__description--disabled" data-tab="description">
+        <p>
+          Компактная длина кухонного гарнитура “Шимо”, составляющая всего лишь 1,2 метра, позволит расположить его даже в совсем крошечных помещениях. Случается, что для кухни нет отдельного помещения. Она бывает совмещена со столовой или гостиной. Данный комплект – именно тот необходимый минимум мебели, который нужен. Он достаточно вместительный и очень практичный. Нейтральная расцветка фасадов и корпуса идеально сочетается с любой окружающей обстановкой. Два верхних шкафа и две нижние тумбы, оборудованные широкими полками, составляют готовый набор.
+        </p>
+      </div>
 
-            <img class="product-card__img" src="img/kitchen-1.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
-          </article>
-        </li>
+      <div class="product__characteristics" data-tab="characteristics">
+        <dl class="product__materials">
+          <div class="product__materials-item">
+            <dt>Материал корпуса:</dt>
+            <dd>ЛДСП,</dd>
+          </div>
 
-        <li class="page-catalog__item">
-          <article class="product-card">
-            <div class="product-card__content">
-              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+          <div class="product__materials-item">
+            <dt>Цвет корпуса:</dt>
+            <dd>Белый,</dd>
+          </div>
 
-              <p class="product-card__price">
-                <span class="product-card__price-old">19 899 ₽</span>
-                14 900 ₽
-              </p>
-              <a class="product-card__button-info" href="product.html">Подробнее</a>
-            </div>
+          <div class="product__materials-item">
+            <dt>Материал фасадов:</dt>
+            <dd>ЛДСП,</dd>
+          </div>
 
-            <img class="product-card__img" src="img/kitchen-2.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
-          </article>
-        </li>
+          <div class="product__materials-item">
+            <dt>Цвет фасадов:</dt>
+            <dd>Шимо тмный/шимо светлый,</dd>
+          </div>
 
-        <li class="page-catalog__item">
-          <article class="product-card">
-            <div class="product-card__content">
-              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+          <div class="product__materials-item">
+            <dt>Длина кухонного гарнитура:</dt>
+            <dd>1.2 метра.</dd>
+          </div>
+        </dl>
 
-              <p class="product-card__price">
-                <span class="product-card__price-old">19 899 ₽</span>
-                14 900 ₽
-              </p>
-              <a class="product-card__button-info" href="product.html">Подробнее</a>
-            </div>
+        <div class="product__specification">
+          <span class="product__specification-title">Кухня включает в себя:</span>
 
-            <img class="product-card__img" src="img/kitchen-3.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
-          </article>
-        </li>
+          <ul class="product__specification-list">
+            <li>Стол на 600 мм, со столешницей - 2 шт.</li>
+            <li>Шкаф верхний на 600 мм (с полкой) 2 шт.</li>
+          </ul>
+        </div>
 
-        <li class="page-catalog__item">
-          <article class="product-card">
-            <div class="product-card__content">
-              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
+        <p class="product__details">
+          Ножки-опоры регулируемые, пластиковые, цвет – серебро. Ручки – пластик. Мойка в комплектацию не   входит! Товар доставляется в упаковке, схема сборки прилагается!
+        </p>
+      </div>
 
-              <p class="product-card__price">
-                <span class="product-card__price-old">19 899 ₽</span>
-                14 900 ₽
-              </p>
-              <a class="product-card__button-info" href="product.html">Подробнее</a>
-            </div>
-
-            <img class="product-card__img" src="img/kitchen-4.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
-          </article>
-        </li>
-
-        <li class="page-catalog__item">
-          <article class="product-card">
-            <div class="product-card__content">
-              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
-
-              <p class="product-card__price">
-                <span class="product-card__price-old">19 899 ₽</span>
-                14 900 ₽
-              </p>
-              <a class="product-card__button-info" href="product.html">Подробнее</a>
-            </div>
-
-            <img class="product-card__img" src="img/kitchen-5.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
-          </article>
-        </li>
-
-        <li class="page-catalog__item">
-          <article class="product-card">
-            <div class="product-card__content">
-              <h3 class="product-card__title">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</h3>
-
-              <p class="product-card__price">
-                <span class="product-card__price-old">19 899 ₽</span>
-                14 900 ₽
-              </p>
-              <a class="product-card__button-info" href="product.html">Подробнее</a>
-            </div>
-
-            <img class="product-card__img" src="img/kitchen-6.jpg" width="360" height="260" alt="Кухонный гарнитур “ЛОФТ”. Длина 2 метра.">
-          </article>
-        </li>
-      </ul>
-
-      <button class="page-catalog__showmore-button button">Показать еще</button>
+      <div class="product__order">
+        <div class="product__prices">
+          <span class="product__price-old">19 899 ₽</span>
+          <span class="product__price-new">14 540 ₽</span>
+        </div>
+        <button class="product__button-order button">Отставить заявку</button>
+      </div>
     </div>
   </main>
 
