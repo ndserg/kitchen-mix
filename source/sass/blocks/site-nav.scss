@@ -1,4 +1,4 @@
-.site-nav__list {
+.site-nav ul {
   @include list-reset;
 
   @media (min-width: $desktop-width) {
@@ -11,9 +11,10 @@
   }
 }
 
-.site-nav__item {
+.site-nav li {
   margin-bottom: 25px;
 
+  color: $font-main-color;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -26,13 +27,25 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+
+    &:hover {
+      color: $font-green-color;
+    }
+  }
+
+  &.current-menu-item {
+    border-bottom: 2px solid $bg-primary;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }
 
-.site-nav__link {
+.site-nav a {
   display: block;
 
-  color: $font-main-color;
+  color: inherit;
   font-weight: 600;
   font-size: 18px;
   line-height: normal;
@@ -44,17 +57,5 @@
 
   @media (min-width: $desktop-width) {
     font-size: 14px;
-
-    &:hover {
-      color: $font-green-color;
-    }
-  }
-
-  &--current {
-    border-bottom: 2px solid $bg-primary;
-  }
-
-  &:active {
-    opacity: 0.7;
   }
 }
