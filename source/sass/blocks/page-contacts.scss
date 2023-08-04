@@ -20,7 +20,9 @@
 
 .page-contacts__wrapper {
   @media (min-width: $tablet-width) {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -34,42 +36,44 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 344px;
+    width: 100%;
     margin-bottom: 52px;
 
     font-size: 28px;
     text-align: left;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 547px;
   }
 }
 
 .page-contacts__contacts-info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 65px;
-  padding-left: 25px;
+  margin-bottom: 60px;
 
   row-gap: 30px;
 
   @media (min-width: $tablet-width) {
     width: 344px;
-    min-height: 196px;
     margin-bottom: 45px;
-    padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 547px;
+    width: 520px;
     min-height: 360px;
     margin-bottom: 100px;
   }
 }
 
 .page-contacts__address {
-  position: relative;
+  display: grid;
+  grid-template-columns: 15px auto;
+
+  column-gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 25px auto;
+
+    column-gap: 15px;
+  }
 
   p {
     margin: 0;
@@ -81,24 +85,32 @@
   }
 }
 
-.page-contacts__phones {
-  position: relative;
-}
-
 .page-contacts__phones-title {
+  display: grid;
+  grid-template-columns: 15px auto;
+
   margin: 0;
   margin-bottom: 22px;
 
   font-weight: 600;
   font-size: 16px;
 
+  column-gap: 10px;
+
   @media (min-width: $tablet-width) {
+    grid-template-columns: 25px auto;
+
     font-size: 20px;
+
+    column-gap: 15px;
   }
 }
 
 .page-contacts__list {
   @include list-reset;
+
+  width: 100%;
+  padding-left: 40px;
 
   color: inherit;
   font: inherit;
@@ -127,9 +139,18 @@
 }
 
 .page-contacts__social-item {
-  position: relative;
+  display: grid;
+  grid-template-columns: 15px auto;
 
   margin-bottom: 22px;
+
+  column-gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 25px auto;
+
+    column-gap: 15px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -142,18 +163,12 @@
 }
 
 .page-contacts__icon {
-  position: absolute;
-  top: 0;
-  left: -25px;
-
   width: 15px;
   height: auto;
 
   color: $font-green-color;
 
   @media (min-width: $tablet-width) {
-    left: -40px;
-
     width: 25px;
   }
 }
@@ -165,11 +180,7 @@
   margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    margin-bottom: 0;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {

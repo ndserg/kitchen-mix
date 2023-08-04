@@ -31,7 +31,8 @@ const copy = () => {
   return src([
     "source/fonts/**/*.{woff2,woff}",
     "source/*.{png,ico,webmanifest}",
-    "source/img/icons/**/*"
+    "source/img/icons/**/*",
+    "source/vendors/**/*"
     ], {
     base: "source"
     })

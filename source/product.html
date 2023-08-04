@@ -12,6 +12,7 @@
   <link rel="icon" href="favicon-32x32.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png" type="image/png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="vendors/baguetteBox.css">
 </head>
 
 <body>
@@ -86,18 +87,29 @@
     <h1 class="product__title">Кухонный гарнитур “Шимо”. Длина 1.2 метра.</h1>
 
     <div class="product__gallery">
-      <img class="product__img" src="img/kitchen-1.jpg" width="345" height="333" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+      <a class="product__img" href="img/kitchen-1.jpg" data-caption="Фото 1">
+        <img src="img/kitchen-1.jpg" width="345" height="333" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+      </a>
 
-      <div class="product__gallery-thumbnails">
-        <img class="product__thumbnail" src="img/kitchen-2.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
-        <img class="product__thumbnail" src="img/kitchen-3.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
-        <img class="product__thumbnail" src="img/kitchen-4.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
-        <img class="product__thumbnail" src="img/kitchen-5.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
-        <img class="product__thumbnail" src="img/kitchen-6.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
-      </div>
+      <a class="product__img" href="img/kitchen-2.jpg" data-caption="Фото 2">
+        <img src="img/kitchen-2.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+      </a>
 
-      <button class="product__gallery-button product__gallery-button--prev">Назад</button>
-      <button class="product__gallery-button product__gallery-button--next">Вперед</button>
+      <a class="product__img" href="img/kitchen-3.jpg" data-caption="Фото 3">
+        <img src="img/kitchen-3.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+      </a>
+
+      <a class="product__img" href="img/kitchen-4.jpg" data-caption="Фото 4">
+        <img src="img/kitchen-4.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+      </a>
+
+      <a class="product__img" href="img/kitchen-5.jpg" data-caption="Фото 5">
+        <img src="img/kitchen-5.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+      </a>
+
+      <a class="product__img" href="img/kitchen-6.jpg" data-caption="Фото 6">
+        <img src="img/kitchen-6.jpg" width="100" height="60" alt="Кухонный гарнитур “Шимо”. Длина 1.2 метра.">
+      </a>
     </div>
 
     <div class="product__info">
@@ -247,5 +259,6 @@
 
   <!-- inject:js -->
   <!-- endinject -->
+  <script src="vendors/baguetteBox.js"></script>
 </body>
 </html>
