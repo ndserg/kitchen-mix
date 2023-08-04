@@ -40,19 +40,6 @@
   background-color: $bg-light-main-color;
   box-shadow: 10px 10px 20px 0px rgba(51, 51, 51, 0.05);
 
-  &:active {
-    outline: 2px solid $bg-secondary-color;
-    cursor: pointer;
-
-    .product-card__title {
-      color: $font-green-color;
-    }
-
-    .product-card__button-info {
-      background-color: $bg-secondary-color;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 340px;
   }
@@ -72,6 +59,19 @@
       .product-card__button-info {
         background-color: $bg-secondary-color;
       }
+    }
+  }
+
+  &:active {
+    outline: 2px solid $bg-secondary-color-light;
+    cursor: pointer;
+
+    .product-card__title {
+      color: $font-green-color;
+    }
+
+    .product-card__button-info {
+      background-color: $bg-secondary-color-light;
     }
   }
 }
