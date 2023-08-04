@@ -33,7 +33,7 @@
 
 ![Скриншот Главная](/screenshots/index-1.jpg)
 ![Скриншот Главная](/screenshots/index-2.jpg)
-![Скриншот Каталог](/screenshots/catalog.jpg)
 ![Скриншот Страница Товара (TAB - Описание)](/screenshots/product-descr.jpg)
 ![Скриншот Страница Товара (TAB - Характеристики)](/screenshots/product-specifs.jpg)
+![Скриншот Каталог](/screenshots/catalog.jpg)
 ![Скриншот Контакты](/screenshots/contacts.jpg)
