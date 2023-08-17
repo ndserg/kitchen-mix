@@ -43,11 +43,11 @@ img {
 .container {
   width: $mobile-width;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   @media (min-width: $desktop-width) {

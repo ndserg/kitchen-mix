@@ -43,6 +43,7 @@
 
 .faq__img {
   max-width: 345px;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -50,8 +51,8 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    width: auto;
     max-width: 360px;
-    max-height: 360px;
 
     object-fit: cover;
   }
