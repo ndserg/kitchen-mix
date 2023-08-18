@@ -4,6 +4,8 @@
 
   font-weight: 600;
   font-size: 16px;
+
+  transition: all 0.4s;
 }
 
 .product-card__button-info {
@@ -28,6 +30,8 @@
   border-radius: 50%;
 
   cursor: pointer;
+
+  transition: all 0.4s;
 }
 
 .product-card {
@@ -39,6 +43,8 @@
 
   background-color: $bg-light-main-color;
   box-shadow: 10px 10px 20px 0px rgba(51, 51, 51, 0.05);
+
+  transition: all 0.4s;
 
   @media (min-width: $tablet-width) {
     width: 340px;

@@ -110,6 +110,8 @@
 
   border-top: 2px solid $bg-primary;
 
+  transition: all 0.4s;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
   }
@@ -139,6 +141,8 @@
 
     .faq__toggle-button {
       top: 15px;
+
+      transition: all 0.4s;
 
       &::after {
         font-weight: 700;

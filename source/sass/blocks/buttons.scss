@@ -80,7 +80,11 @@
 
   &--green  {
     background: linear-gradient(268deg, $bg-secondary-color 0%, $bg-secondary-color-light 100%);
+
+    box-shadow: 10px 10px 20px 0px rgba($bg-secondary-color-light, 40%);
   }
+
+  transition: all 0.4s;
 
   @media (min-width: $tablet-width) {
     padding-top: 22px;
@@ -102,18 +106,22 @@
     cursor: pointer;
 
     &:hover {
-      background: none;
+      background: transparent;
       background-color: $bg-light-main-color;
 
       outline: 2px solid $bg-primary;
+
+      box-shadow: inset 10px 10px 20px 0px rgba($bg-primary-6f, 40%);
     }
 
     &--green {
       &:hover {
-        background: none;
+        background: transparent;
         background-color: $bg-light-main-color;
 
         outline: 2px solid $bg-secondary-color;
+
+        box-shadow: inset 10px 10px 20px 0px rgba($bg-secondary-color-light, 40%);
       }
     }
   }
