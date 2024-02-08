@@ -13,7 +13,7 @@ const menu = document.querySelector(".header-main__menu");
 let isSettedListener = false;
 
 const mouseUpHandler = (evt) => {
-  if (evt.target.closest('a') || evt.target.closest('button') ) {
+  if (evt.target.closest('a') || evt.target.closest('button')) {
     evt.preventDefault();
 
     burgerButton.classList.remove(burgerButtonCloseClass);

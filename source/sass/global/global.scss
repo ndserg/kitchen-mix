@@ -45,13 +45,10 @@ img {
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
-    padding-right: 15px;
-    padding-left: 15px;
+    width: calc($tablet-width - 30px);
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
-    padding: 0;
+    width: calc($desktop-width - 40px);
   }
 }

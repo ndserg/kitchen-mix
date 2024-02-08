@@ -3,7 +3,6 @@ const del = require("del");
 const mode = require('gulp-mode')();
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
-const concat = require("gulp-concat");
 const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
 const csso = require("postcss-csso");
@@ -15,7 +14,7 @@ const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
 const inject = require("gulp-inject");
 const rename = require("gulp-rename");
-const {dest, series, parallel, src} = require("gulp");
+const { dest, series, parallel, src } = require("gulp");
 const sync = require("browser-sync").create();
 
 // clean
@@ -33,9 +32,9 @@ const copy = () => {
     "source/*.{png,ico,webmanifest}",
     "source/img/icons/**/*",
     "source/vendors/**/*"
-    ], {
+  ], {
     base: "source"
-    })
+  })
     .pipe(dest("build"))
 }
 
@@ -45,16 +44,16 @@ exports.copy = copy;
 
 const images = () => {
   return src(["source/img/**/*.{jpg,png,svg}", "!source/img/icons/*.svg"])
-  .pipe(imagemin([
-    imagemin.mozjpeg({quality: 75, progressive: true}),
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.svgo({
-      plugins: [{
-        removeViewBox: false,
-      }],
-    }),
-  ]))
-  .pipe(dest("build/img"))
+    .pipe(imagemin([
+      imagemin.mozjpeg({ quality: 75, progressive: true }),
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.svgo({
+        plugins: [{
+          removeViewBox: false,
+        }],
+      }),
+    ]))
+    .pipe(dest("build/img"))
 }
 
 exports.images = images;
@@ -63,16 +62,16 @@ exports.images = images;
 
 const icons = () => {
   return src("source/img/icons/*.svg")
-  .pipe(imagemin([
-    imagemin.svgo({
-      plugins: [{
-        removeViewBox: false
-      }]
-    })
-  ]))
-  .pipe(svgstore())
-  .pipe(rename("sprite.svg"))
-  .pipe(dest("build/img/icons"))
+    .pipe(imagemin([
+      imagemin.svgo({
+        plugins: [{
+          removeViewBox: false
+        }]
+      })
+    ]))
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(dest("build/img/icons"))
 }
 
 exports.icons = icons;
@@ -117,10 +116,10 @@ exports.scripts = scripts;
 
 const html = () => {
   return src("source/*.html")
-  .pipe(inject(src(["build/js/*.js", "build/css/*.css"], {read: false}) , {ignorePath: "build", addRootSlash: false}))
-  .pipe(mode.production(htmlmin({collapseWhitespace: true})))
-  .pipe(dest("build"))
-  .pipe(sync.stream());
+    .pipe(inject(src(["build/js/*.js", "build/css/*.css"], { read: false }), { ignorePath: "build", addRootSlash: false }))
+    .pipe(mode.production(htmlmin({ collapseWhitespace: true })))
+    .pipe(dest("build"))
+    .pipe(sync.stream());
 }
 
 exports.html = html;
